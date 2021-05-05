@@ -11,12 +11,12 @@ O(n) time complexity
 O(n) space complexity
 
 ## Grid traveler
-Solution counts number of possible paths on grid(m,n) to get from point 0,0 to m,n
+Solution counts number of possible paths on grid(m,n) to get from starting point(1,1) to ending point(m,n)
 
-cols / rows |0 | 1 | 2 
+cols / rows |1 | 2 | 3 
 ---|---|---|---|
-0 |start| | |
-1 |
-2 | | |end
+1 |start| | |
+2 |
+3 | | |end
 
 Memoization used in this solution as well
