@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        
+
         /*
         * Given set of coins calculate optimal way of giving change
         */
@@ -28,9 +28,8 @@ public class Main {
 
         double nominal = 9.63;
         int rest = cc.recountNominal(nominal);
-        System.out.println(cc.minimumGiveTheChangeCoins(rest));
-        System.out.println(cc.giveTheChange(rest));
-
+        System.out.println("Optimal number of coins: " + cc.minimumGiveTheChangeCoins(rest) + "\n\tas a change = " + nominal);
+        System.out.println("Change coins: " + cc.giveTheChange(rest) + "\n\tfor " + nominal);
 
         /*
         * Calculate n-th number of Fibonacci sequence
@@ -40,13 +39,16 @@ public class Main {
 
         // Memoized approach
         long timeBefore = System.currentTimeMillis();
-        System.out.println(fibonacciSequence.fibonacciSequenceMemoized(fiboNumber));
+        System.out.println("\n" + fiboNumber + "-th number of Fibonacci sequence is = "
+                + fibonacciSequence.fibonacciSequenceMemoized(fiboNumber));
         long timeAfter = System.currentTimeMillis();
-        System.out.println("Memoized Fibonacci function executed in " + (timeAfter - timeBefore) + " ms");
+        System.out.println("Memoized Fibonacci function executed in "
+                + (timeAfter - timeBefore) + " ms");
 
         // Regular approach
         timeBefore = System.currentTimeMillis();
-        System.out.println(fibonacciSequence.fibonacciSequence(fiboNumber));
+        System.out.println("\n" + fiboNumber + "-th number of Fibonacci sequence is = "
+                + fibonacciSequence.fibonacciSequence(fiboNumber));
         timeAfter = System.currentTimeMillis();
         System.out.println("Regular Fibonacci function executed in " + (timeAfter - timeBefore) + " ms");
 
@@ -61,9 +63,11 @@ public class Main {
         GridTraveler gridTraveler = new GridTraveler();
 
         timeBefore = System.currentTimeMillis();
-        System.out.println(gridTraveler.memoizedGridTraveler(m,n,arr));
+        System.out.println("\nGrid traveler can pass ("
+                + m + " by " + n + ") grid in "
+                + gridTraveler.memoizedGridTraveler(m,n,arr) + " different ways");
         System.out.println("Grid travel time: " + (System.currentTimeMillis() - timeBefore)
-        + " ms\n\tfor: m = " + m + ", n = " + n);
+                + " ms\n\tfor: m = " + m + ", n = " + n);
         // gridTraveler.gridTravel(m,n); //-> way too long, trust me
     }
 }
