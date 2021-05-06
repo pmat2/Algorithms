@@ -1,3 +1,5 @@
+package BinarySort;
+
 public class BinarySort {
 
     /**

@@ -1,3 +1,4 @@
+import BinarySort.BinarySort;
 import Coins.CoinCounter;
 import Coins.Coins;
 import Fibonacci.Fibonacci;
