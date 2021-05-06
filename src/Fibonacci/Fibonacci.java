@@ -6,7 +6,7 @@ public class Fibonacci {
     private final long[] fibArray;
 
     /**
-     * Regular Fibonacci.Fibonacci sequence function
+     * Regular Fibonacci sequence function
      * for n=50 execution takes around 50secs
      * @param whichNumber n-th number of Fibonacci.Fibonacci sequence
      * @return value of n-th number of Fibonacci.Fibonacci sequence
@@ -18,7 +18,7 @@ public class Fibonacci {
     }
 
     /**
-     * Memoized Fibonacci.Fibonacci sequence function
+     * Memoized Fibonacci sequence function
      * After n=93 result is beyond long capabilities
      * @param whichNumber n-th number of Fibonacci.Fibonacci sequence
      * @return value of n-th number of Fibonacci.Fibonacci sequence

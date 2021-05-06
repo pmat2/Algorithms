@@ -9,7 +9,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         /*
         * Given set of coins calculate optimal way of giving change
         */
@@ -36,7 +35,7 @@ public class Main {
         /*
         * Calculate n-th number of Fibonacci.Fibonacci sequence
         */
-        int fiboNumber = 45;
+        int fiboNumber = 50;
         Fibonacci fibonacciSequence = new Fibonacci(fiboNumber);
 
         // Memoized approach
@@ -44,7 +43,7 @@ public class Main {
         System.out.println("\n" + fiboNumber + "-th number of Fibonacci sequence is = "
                 + fibonacciSequence.fibonacciSequenceMemoized(fiboNumber));
         long timeAfter = System.currentTimeMillis();
-        System.out.println("Memoized Fibonacci.Fibonacci function executed in "
+        System.out.println("Memoized Fibonacci function executed in "
                 + (timeAfter - timeBefore) + " ms");
 
         // Regular approach
@@ -52,7 +51,7 @@ public class Main {
         System.out.println("\n" + fiboNumber + "-th number of Fibonacci sequence is = "
                 + fibonacciSequence.fibonacciSequence(fiboNumber));
         timeAfter = System.currentTimeMillis();
-        System.out.println("Regular Fibonacci.Fibonacci function executed in " + (timeAfter - timeBefore) + " ms");
+        System.out.println("Regular Fibonacci function executed in " + (timeAfter - timeBefore) + " ms");
 
 
         /*
