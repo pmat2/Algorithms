@@ -1,3 +1,5 @@
+package GridTraveler;
+
 public class GridTraveler {
 
     public long gridTravel(int m, int n){

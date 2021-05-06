@@ -1,5 +1,7 @@
 import Coins.CoinCounter;
 import Coins.Coins;
+import Fibonacci.Fibonacci;
+import GridTraveler.GridTraveler;
 
 import java.util.List;
 
@@ -32,25 +34,25 @@ public class Main {
         System.out.println("Change coins: " + cc.giveTheChange(rest) + "\n\tfor " + nominal);
 
         /*
-        * Calculate n-th number of Fibonacci sequence
+        * Calculate n-th number of Fibonacci.Fibonacci sequence
         */
         int fiboNumber = 5;
         Fibonacci fibonacciSequence = new Fibonacci(fiboNumber);
 
         // Memoized approach
         long timeBefore = System.currentTimeMillis();
-        System.out.println("\n" + fiboNumber + "-th number of Fibonacci sequence is = "
+        System.out.println("\n" + fiboNumber + "-th number of Fibonacci.Fibonacci sequence is = "
                 + fibonacciSequence.fibonacciSequenceMemoized(fiboNumber));
         long timeAfter = System.currentTimeMillis();
-        System.out.println("Memoized Fibonacci function executed in "
+        System.out.println("Memoized Fibonacci.Fibonacci function executed in "
                 + (timeAfter - timeBefore) + " ms");
 
         // Regular approach
         timeBefore = System.currentTimeMillis();
-        System.out.println("\n" + fiboNumber + "-th number of Fibonacci sequence is = "
+        System.out.println("\n" + fiboNumber + "-th number of Fibonacci.Fibonacci sequence is = "
                 + fibonacciSequence.fibonacciSequence(fiboNumber));
         timeAfter = System.currentTimeMillis();
-        System.out.println("Regular Fibonacci function executed in " + (timeAfter - timeBefore) + " ms");
+        System.out.println("Regular Fibonacci.Fibonacci function executed in " + (timeAfter - timeBefore) + " ms");
 
 
         /*

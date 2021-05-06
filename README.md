@@ -5,8 +5,8 @@ Set of algorithm to stay in practice
 Solution counts optimal way of giving the change.  
 Possible to adjust set of available coins.
 
-## Fibonacci sequence
-Solution counts n-th number of Fibonacci sequence with  
+## Fibonacci.Fibonacci sequence
+Solution counts n-th number of Fibonacci.Fibonacci sequence with  
 O(n) time complexity
 O(n) space complexity
 
