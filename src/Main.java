@@ -55,6 +55,7 @@ public class Main {
         System.out.println("Regular Fibonacci function executed in " + (timeAfter - timeBefore) + " ms");
 
 
+
         /*
         * Calculate number of possible paths on grid from point 0,0 to m,n
         * m - number of rows, n - number of columns
