@@ -36,12 +36,12 @@ public class Main {
         /*
         * Calculate n-th number of Fibonacci.Fibonacci sequence
         */
-        int fiboNumber = 5;
+        int fiboNumber = 45;
         Fibonacci fibonacciSequence = new Fibonacci(fiboNumber);
 
         // Memoized approach
         long timeBefore = System.currentTimeMillis();
-        System.out.println("\n" + fiboNumber + "-th number of Fibonacci.Fibonacci sequence is = "
+        System.out.println("\n" + fiboNumber + "-th number of Fibonacci sequence is = "
                 + fibonacciSequence.fibonacciSequenceMemoized(fiboNumber));
         long timeAfter = System.currentTimeMillis();
         System.out.println("Memoized Fibonacci.Fibonacci function executed in "
@@ -49,7 +49,7 @@ public class Main {
 
         // Regular approach
         timeBefore = System.currentTimeMillis();
-        System.out.println("\n" + fiboNumber + "-th number of Fibonacci.Fibonacci sequence is = "
+        System.out.println("\n" + fiboNumber + "-th number of Fibonacci sequence is = "
                 + fibonacciSequence.fibonacciSequence(fiboNumber));
         timeAfter = System.currentTimeMillis();
         System.out.println("Regular Fibonacci.Fibonacci function executed in " + (timeAfter - timeBefore) + " ms");
@@ -70,6 +70,6 @@ public class Main {
                 + gridTraveler.memoizedGridTraveler(m,n,arr) + " different ways");
         System.out.println("Grid travel time: " + (System.currentTimeMillis() - timeBefore)
                 + " ms\n\tfor: m = " + m + ", n = " + n);
-        // gridTraveler.gridTravel(m,n); //-> way too long, trust me
+//        System.out.println(gridTraveler.gridTravel(m,n)); //-> way too long, trust me
     }
 }

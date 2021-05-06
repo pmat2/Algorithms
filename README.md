@@ -6,7 +6,7 @@ Solution counts optimal way of giving the change.
 Possible to adjust set of available coins.
 
 ## Fibonacci.Fibonacci sequence
-Solution counts n-th number of Fibonacci.Fibonacci sequence with  
+Solution counts n-th number of Fibonacci sequence with  
 O(n) time complexity
 O(n) space complexity
 
