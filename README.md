@@ -1,5 +1,5 @@
 # Algorithms
-Set of algorithm to stay in practice
+Algorithms training to stay in practice
 
 ## Coin counter
 Solution counts optimal way of giving the change.  
@@ -20,3 +20,7 @@ cols / rows |1 | 2 | 3
 3 | | |end
 
 Memoization used in this solution as well
+
+## Binary sort
+Self-explanatory  
+Requires sorted array

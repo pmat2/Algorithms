@@ -35,7 +35,7 @@ public class Main {
         /*
         * Calculate n-th number of Fibonacci.Fibonacci sequence
         */
-        int fiboNumber = 50;
+        int fiboNumber = 5;
         Fibonacci fibonacciSequence = new Fibonacci(fiboNumber);
 
         // Memoized approach
@@ -70,5 +70,10 @@ public class Main {
         System.out.println("Grid travel time: " + (System.currentTimeMillis() - timeBefore)
                 + " ms\n\tfor: m = " + m + ", n = " + n);
 //        System.out.println(gridTraveler.gridTravel(m,n)); //-> way too long, trust me
+
+        BinarySort binarySort = new BinarySort();
+
+        int[] array = {1,2,3,4,5,6,7,8,9,10,11,12,15,16,17,18};
+        System.out.println(binarySort.binarySort(array, 15));
     }
 }
