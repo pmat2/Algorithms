@@ -30,3 +30,7 @@ Solution checks if given array of numbers arr and number n, it is possible to su
 
 ## Sum
 Sums elements in array recursively
+
+## Sort
+Sorting algorithms
+- quicksort
