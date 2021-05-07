@@ -98,6 +98,13 @@ public class Main {
         timeAfter = System.currentTimeMillis();
         System.out.println("Computations took " + (timeAfter - timeBefore) + " ms");
 
-
+        Sum sum = new Sum();
+        int[] sArray = {1,2,3,4,5};
+        timeBefore = System.currentTimeMillis();
+        System.out.println("\nSum of elements in array: "
+                + Arrays.toString(sArray)
+                + " = " + sum.sumArray(sArray));
+        timeAfter = System.currentTimeMillis();
+        System.out.println("Execution time: " + (timeAfter - timeBefore) + " ms");
     }
 }

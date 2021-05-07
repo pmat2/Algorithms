@@ -4,7 +4,7 @@ public class CanSum {
 
 
     /**
-     * Wrapper function, passes HashMap to original function
+     * Wrapper function, passes HashMap
      * @param sum checked number
      * @param sumArray array of values
      * @return true if sum, false if not
