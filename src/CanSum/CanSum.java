@@ -1,3 +1,5 @@
+package CanSum;
+
 import java.util.HashMap;
 
 public class CanSum {

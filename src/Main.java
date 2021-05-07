@@ -1,8 +1,11 @@
 import BinarySort.BinarySearch;
+import CanSum.CanSum;
 import Coins.CoinCounter;
 import Coins.Coins;
 import Fibonacci.Fibonacci;
 import GridTraveler.GridTraveler;
+import Sort.Sort;
+import Sum.Sum;
 
 import java.util.Arrays;
 import java.util.List;
