@@ -21,7 +21,7 @@ cols / rows |1 | 2 | 3
 
 Memoization used in this solution as well
 
-## Binary sort
+## Binary search
 Self-explanatory  
 Requires sorted array
 
