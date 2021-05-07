@@ -106,5 +106,10 @@ public class Main {
                 + " = " + sum.sumArray(sArray));
         timeAfter = System.currentTimeMillis();
         System.out.println("Execution time: " + (timeAfter - timeBefore) + " ms");
+
+        Sort sort = new Sort();
+        int[] qsortArr = {5,8,2,3,10,0,2};
+        sort.quicksort(qsortArr, 0, (qsortArr.length - 1));
+        System.out.println(Arrays.toString(qsortArr));
     }
 }
