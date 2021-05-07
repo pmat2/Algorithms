@@ -1,9 +1,10 @@
-import BinarySort.BinarySort;
+import BinarySort.BinarySearch;
 import Coins.CoinCounter;
 import Coins.Coins;
 import Fibonacci.Fibonacci;
 import GridTraveler.GridTraveler;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -62,20 +63,37 @@ public class Main {
         */
         int m = 18;
         int n = 18;
-        long[][] arr = new long[m+1][n+1];
         GridTraveler gridTraveler = new GridTraveler();
 
         timeBefore = System.currentTimeMillis();
         System.out.println("\nGrid traveler can pass ("
                 + m + " by " + n + ") grid in "
-                + gridTraveler.memoizedGridTraveler(m,n,arr) + " different ways");
+                + gridTraveler.gridTravel(m,n) + " different ways");
         System.out.println("Grid travel time: " + (System.currentTimeMillis() - timeBefore)
                 + " ms\n\tfor: m = " + m + ", n = " + n);
 //        System.out.println(gridTraveler.gridTravel(m,n)); //-> way too long, trust me
 
-        BinarySort binarySort = new BinarySort();
-
+        BinarySearch binarySearch = new BinarySearch();
         int[] array = {1,2,3,4,5,6,7,8,9,10,11,12,15,16,17,18};
-        System.out.println(binarySort.binarySort(array, 15));
+        int searchedVal = 15;
+        timeBefore = System.currentTimeMillis();
+        System.out.println("\nBinary search of " + array.length + " elements array for value: " + searchedVal
+                + "\n\tindex: " + binarySearch.binarySearch(array, searchedVal));
+        timeAfter = System.currentTimeMillis();
+        System.out.println("Searching took " + (timeAfter - timeBefore) + " ms");
+
+        /*
+        * Given array of numbers arr and number n, check if it is possible to sum elements of arr to get n number
+        */
+        CanSum canSum = new CanSum();
+        int[] csArray = {7, 14};
+        int csNum = 300;
+        timeBefore = System.currentTimeMillis();
+        System.out.println("\nElements from array: " + Arrays.toString(csArray)
+                + "\n\t"
+                + (canSum.canSum(csNum, csArray) ? "do" : "do not")
+                + " sum to number: " + csNum);
+        timeAfter = System.currentTimeMillis();
+        System.out.println("Computations took " + (timeAfter - timeBefore) + " ms");
     }
 }

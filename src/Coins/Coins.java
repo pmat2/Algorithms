@@ -1,5 +1,8 @@
 package Coins;
 
+/**
+ * Edit content of this enum to add or remove coins
+ */
 public enum Coins {
     FIVEHUNDRED(500),
     TWOHUNDRED(200),

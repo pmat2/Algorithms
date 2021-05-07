@@ -1,13 +1,13 @@
 package BinarySort;
 
-public class BinarySort {
+public class BinarySearch {
 
     /**
      * @param sortedArr sorted array to look over
      * @param searched searched value
      * @return index of searched value in array
      */
-    public int binarySort(int[] sortedArr, int searched){
+    public int binarySearch(int[] sortedArr, int searched){
         int low = 0;
         int high = sortedArr.length - 1;
         int mid;                            // middle point
