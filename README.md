@@ -27,3 +27,6 @@ Requires sorted array
 
 ## Can sum
 Solution checks if given array of numbers arr and number n, it is possible to sum elements of arr to get n number
+
+## Sum
+Sums elements in array recursively

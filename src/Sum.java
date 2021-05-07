@@ -10,6 +10,7 @@ public class Sum {
     }
 
     /**
+     * Recursive sum of elements in array
      * @param array array of ints
      * @param index passed by wrapper
      * @return sum of all elements of array
