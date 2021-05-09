@@ -31,6 +31,6 @@ Solution checks if given array of numbers arr and number n, it is possible to su
 ## Sum.Sum
 Sums elements in array recursively
 
-## Sort.Sort
+## Sort
 Sorting algorithms
 - quicksort

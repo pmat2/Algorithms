@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class CoinCounter {
 
-    private List<Coins> coinsList;
+    private final List<Coins> coinsList;
 
     /**
      * Only coins from coinsList variable in this class are considered during calculations
@@ -14,7 +14,7 @@ public class CoinCounter {
      * @return minimum count of coins needed to give the change
      */
     public int minimumGiveTheChangeCoins(int number){
-        if(number <= 0) throw new IllegalArgumentException("Change cannot be negative");
+        if(number < 0) throw new IllegalArgumentException("Change cannot be negative");
 
         int count = 0;
 

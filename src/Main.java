@@ -33,16 +33,16 @@ public class Main {
         // Use this if all coins are available
         // CoinCounter cc2 = new CoinCounter(Arrays.asList(Coins.values()));
 
-        double nominal = 9.63;
+        double nominal = 0.99;
         int rest = cc.recountNominal(nominal);
-        System.out.println("Optimal number of coins: " + cc.minimumGiveTheChangeCoins(rest) + "\n\tas a change = " + nominal);
+        System.out.println("\nOptimal number of coins: " + cc.minimumGiveTheChangeCoins(rest) + "\n\tas a change = " + nominal);
         System.out.println("Change coins: " + cc.giveTheChange(rest) + "\n\tfor " + nominal);
 
 
         /*
          * Calculate n-th number of Fibonacci.Fibonacci sequence
          */
-        int fiboNumber = 5;
+        int fiboNumber = 25;
         Fibonacci fibonacciSequence = new Fibonacci(fiboNumber);
 
         // Memoized approach
@@ -114,5 +114,16 @@ public class Main {
         int[] qsortArr = {5,8,2,3,10,0,2};
         sort.quicksort(qsortArr, 0, (qsortArr.length - 1));
         System.out.println(Arrays.toString(qsortArr));
+
+        /*
+        * Given string target word, and list of strings check if it is possible to create words from elements from list
+        */
+
+        CanConstruct canConstruct = new CanConstruct();
+        List<String> stringList = Arrays.asList("da", "bb", "i", "ng");
+        String word = "dabbing";
+        System.out.println("It " + ((canConstruct.canConstruct(word, stringList)) ? "is" : "is not")
+                + " possible to create word: " + word
+                + "\n\tfrom list of words: " + stringList);
     }
 }
