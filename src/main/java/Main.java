@@ -48,18 +48,18 @@ public class Main {
 
         // Memoized approach
         long timeBefore = System.currentTimeMillis();
-        System.out.println("\n" + fiboNumber + "-th number of main.java.Fibonacci sequence is = "
+        System.out.println("\n" + fiboNumber + "-th number of Fibonacci sequence is = "
                 + fibonacciSequence.fibonacciSequenceMemoized(fiboNumber));
         long timeAfter = System.currentTimeMillis();
-        System.out.println("Memoized main.java.Fibonacci function executed in "
+        System.out.println("Memoized Fibonacci function executed in "
                 + (timeAfter - timeBefore) + " ms");
 
         // Regular approach
         timeBefore = System.currentTimeMillis();
-        System.out.println("\n" + fiboNumber + "-th number of main.java.Fibonacci sequence is = "
+        System.out.println("\n" + fiboNumber + "-th number of Fibonacci sequence is = "
                 + fibonacciSequence.fibonacciSequence(fiboNumber));
         timeAfter = System.currentTimeMillis();
-        System.out.println("Regular main.java.Fibonacci function executed in " + (timeAfter - timeBefore) + " ms");
+        System.out.println("Regular Fibonacci function executed in " + (timeAfter - timeBefore) + " ms");
 
 
         /*

@@ -5,8 +5,8 @@ Algorithms training to stay in practice
 Solution counts optimal way of giving the change.  
 Possible to adjust set of available coins.
 
-## main.java.Fibonacci sequence
-Solution counts n-th number of main.java.Fibonacci sequence with  
+## Fibonacci sequence
+Solution counts n-th number of Fibonacci sequence with  
 O(n) time complexity
 O(n) space complexity
 
@@ -28,10 +28,10 @@ Requires sorted array
 ## Can sum
 Solution checks if given array of numbers arr and number n, it is possible to sum elements of arr to get n number
 
-## main.java.Sum.main.java.Sum
+## Sum
 Sums elements in array recursively
 
-## main.java.Sort
+## Sort
 Sorting algorithms
 - quicksort
 
