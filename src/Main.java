@@ -1,4 +1,5 @@
 import BinarySort.BinarySearch;
+import CanConstruct.CanConstruct;
 import CanSum.CanSum;
 import Coins.CoinCounter;
 import Coins.Coins;
@@ -111,19 +112,33 @@ public class Main {
         System.out.println("Execution time: " + (timeAfter - timeBefore) + " ms");
 
         Sort sort = new Sort();
-        int[] qsortArr = {5,8,2,3,10,0,2};
+        int[] qsortArr = {5,8,2,3,10,0,2,-1,99,101,64,23,85,32,58,95,11,13,75,246};
         sort.quicksort(qsortArr, 0, (qsortArr.length - 1));
-        System.out.println(Arrays.toString(qsortArr));
+        timeBefore = System.currentTimeMillis();
+        System.out.println("\nQuick sort on " + qsortArr.length + "-elements array"
+                + "\n\tsorted array: " + Arrays.toString(qsortArr)
+                + "\n\ttook " + (System.currentTimeMillis() - timeBefore) + " ms");
+
 
         /*
         * Given string target word, and list of strings check if it is possible to create words from elements from list
         */
-
         CanConstruct canConstruct = new CanConstruct();
-        List<String> stringList = Arrays.asList("da", "bb", "i", "ng");
-        String word = "dabbing";
-        System.out.println("It " + ((canConstruct.canConstruct(word, stringList)) ? "is" : "is not")
+        List<String> stringList = Arrays.asList("a", "aa", "aaaa", "aaaaaaaaaa", "aaaaaaaaaaaaaaaa");
+        String word = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaz";
+
+        timeBefore = System.currentTimeMillis();
+        System.out.println("\nIt " + ((canConstruct.canConstruct(word, stringList)) ? "is" : "is not")
                 + " possible to create word: " + word
-                + "\n\tfrom list of words: " + stringList);
+                + "\n\tfrom list of words: " + stringList
+                + "\n\t with regular function"
+                + " it took " + (System.currentTimeMillis() - timeBefore) + " ms");
+
+        timeBefore = System.currentTimeMillis();
+        System.out.println("\nIt " + ((canConstruct.canConstructMemo(word, stringList)) ? "is" : "is not")
+                + " possible to create word: " + word
+                + "\n\tfrom list of words: " + stringList
+                + "\n\t with memoized function"
+                + " it took " + (System.currentTimeMillis() - timeBefore) + " ms");
     }
 }

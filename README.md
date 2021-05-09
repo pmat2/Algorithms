@@ -34,3 +34,6 @@ Sums elements in array recursively
 ## Sort
 Sorting algorithms
 - quicksort
+
+## Can construct
+Solution check if it is possible to create word from list of words
