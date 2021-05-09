@@ -1,4 +1,4 @@
-package CanConstruct;
+package canConstruct;
 
 import java.util.HashMap;
 import java.util.List;

@@ -1,4 +1,4 @@
-package Fibonacci;
+package fibonacci;
 
 public class Fibonacci {
 
@@ -6,25 +6,25 @@ public class Fibonacci {
     private final long[] fibArray;
 
     /**
-     * Regular Fibonacci sequence function
+     * Regular main.java.Fibonacci sequence function
      * for n=50 execution takes around 50secs
-     * @param whichNumber n-th number of Fibonacci.Fibonacci sequence
-     * @return value of n-th number of Fibonacci.Fibonacci sequence
+     * @param whichNumber n-th number of main.java.Fibonacci.main.java.Fibonacci sequence
+     * @return value of n-th number of main.java.Fibonacci.main.java.Fibonacci sequence
      */
     public long fibonacciSequence(int whichNumber){
-        if(whichNumber < 0) throw new IllegalArgumentException("Cannot calculate negative number of Fibonacci.Fibonacci sequence");
+        if(whichNumber < 0) throw new IllegalArgumentException("Cannot calculate negative number of main.java.Fibonacci.main.java.Fibonacci sequence");
         if(whichNumber <= 2) return 1;
         return fibonacciSequence(whichNumber - 2) + fibonacciSequence( whichNumber -1);
     }
 
     /**
-     * Memoized Fibonacci sequence function
+     * Memoized main.java.Fibonacci sequence function
      * After n=93 result is beyond long capabilities
-     * @param whichNumber n-th number of Fibonacci.Fibonacci sequence
-     * @return value of n-th number of Fibonacci.Fibonacci sequence
+     * @param whichNumber n-th number of main.java.Fibonacci.main.java.Fibonacci sequence
+     * @return value of n-th number of main.java.Fibonacci.main.java.Fibonacci sequence
      */
     public long fibonacciSequenceMemoized(int whichNumber){
-        if(whichNumber < 0) throw new IllegalArgumentException("Cannot calculate negative number of Fibonacci.Fibonacci sequence");
+        if(whichNumber < 0) throw new IllegalArgumentException("Cannot calculate negative number of main.java.Fibonacci.main.java.Fibonacci sequence");
 
         long fibValue;
 

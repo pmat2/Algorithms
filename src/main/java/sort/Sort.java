@@ -1,7 +1,13 @@
-package Sort;
+package sort;
 
 public class Sort {
 
+    /**
+     * Quick sort
+     * @param arr array of ints
+     * @param beginIndex index of first element
+     * @param endIndex index of last element
+     */
     public void quicksort(int[] arr, int beginIndex, int endIndex){
         if (beginIndex < endIndex){
             int partitionIndex = partition(arr, beginIndex, endIndex);
@@ -11,6 +17,13 @@ public class Sort {
         }
     }
 
+    /**
+     * Pivot function
+     * @param arr array of ints
+     * @param begin index of first element
+     * @param end index of last element
+     * @return returns index of pivot
+     */
     private int partition(int[] arr, int begin, int end) {
         int pivot = arr[end];
         int index = (begin - 1);

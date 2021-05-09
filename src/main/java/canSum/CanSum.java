@@ -1,4 +1,4 @@
-package CanSum;
+package canSum;
 
 import java.util.HashMap;
 

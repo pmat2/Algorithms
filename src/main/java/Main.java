@@ -1,12 +1,12 @@
-import BinarySort.BinarySearch;
-import CanConstruct.CanConstruct;
-import CanSum.CanSum;
-import Coins.CoinCounter;
-import Coins.Coins;
-import Fibonacci.Fibonacci;
-import GridTraveler.GridTraveler;
-import Sort.Sort;
-import Sum.Sum;
+import coins.CoinCounter;
+import coins.Coins;
+import binarySearch.BinarySearch;
+import canConstruct.CanConstruct;
+import canSum.CanSum;
+import fibonacci.Fibonacci;
+import gridTraveler.GridTraveler;
+import sort.Sort;
+import sum.Sum;
 
 import java.util.Arrays;
 import java.util.List;
@@ -32,7 +32,7 @@ public class Main {
                 Coins.ONE)
         );
         // Use this if all coins are available
-        // CoinCounter cc2 = new CoinCounter(Arrays.asList(Coins.values()));
+        // CoinCounter cc2 = new CoinCounter(Arrays.asList(main.java.Coins.values()));
 
         double nominal = 0.99;
         int rest = cc.recountNominal(nominal);
@@ -41,25 +41,25 @@ public class Main {
 
 
         /*
-         * Calculate n-th number of Fibonacci.Fibonacci sequence
+         * Calculate n-th number of main.java.Fibonacci.main.java.Fibonacci sequence
          */
         int fiboNumber = 25;
         Fibonacci fibonacciSequence = new Fibonacci(fiboNumber);
 
         // Memoized approach
         long timeBefore = System.currentTimeMillis();
-        System.out.println("\n" + fiboNumber + "-th number of Fibonacci sequence is = "
+        System.out.println("\n" + fiboNumber + "-th number of main.java.Fibonacci sequence is = "
                 + fibonacciSequence.fibonacciSequenceMemoized(fiboNumber));
         long timeAfter = System.currentTimeMillis();
-        System.out.println("Memoized Fibonacci function executed in "
+        System.out.println("Memoized main.java.Fibonacci function executed in "
                 + (timeAfter - timeBefore) + " ms");
 
         // Regular approach
         timeBefore = System.currentTimeMillis();
-        System.out.println("\n" + fiboNumber + "-th number of Fibonacci sequence is = "
+        System.out.println("\n" + fiboNumber + "-th number of main.java.Fibonacci sequence is = "
                 + fibonacciSequence.fibonacciSequence(fiboNumber));
         timeAfter = System.currentTimeMillis();
-        System.out.println("Regular Fibonacci function executed in " + (timeAfter - timeBefore) + " ms");
+        System.out.println("Regular main.java.Fibonacci function executed in " + (timeAfter - timeBefore) + " ms");
 
 
         /*
@@ -105,7 +105,7 @@ public class Main {
         Sum sum = new Sum();
         int[] sArray = {1,2,3,4,5};
         timeBefore = System.currentTimeMillis();
-        System.out.println("\nSum of elements in array: "
+        System.out.println("\nmain.java.Sum of elements in array: "
                 + Arrays.toString(sArray)
                 + " = " + sum.sumArray(sArray));
         timeAfter = System.currentTimeMillis();

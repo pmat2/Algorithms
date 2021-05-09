@@ -1,4 +1,4 @@
-package Coins;
+package coins;
 
 /**
  * Edit content of this enum to add or remove coins

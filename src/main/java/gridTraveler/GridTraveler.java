@@ -1,4 +1,4 @@
-package GridTraveler;
+package gridTraveler;
 
 public class GridTraveler {
 
