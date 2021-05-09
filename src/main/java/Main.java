@@ -36,30 +36,26 @@ public class Main {
 
         double nominal = 0.99;
         int rest = cc.recountNominal(nominal);
+
         System.out.println("\nOptimal number of coins: " + cc.minimumGiveTheChangeCoins(rest) + "\n\tas a change = " + nominal);
         System.out.println("Change coins: " + cc.giveTheChange(rest) + "\n\tfor " + nominal);
 
 
         /*
-         * Calculate n-th number of main.java.Fibonacci.main.java.Fibonacci sequence
+         * Calculate n-th number of Fibonacci sequence
          */
-        int fiboNumber = 25;
-        Fibonacci fibonacciSequence = new Fibonacci(fiboNumber);
+        int fibonacciNumber = 41;
+        Fibonacci fibonacciSequence = new Fibonacci(fibonacciNumber);
 
-        // Memoized approach
         long timeBefore = System.currentTimeMillis();
-        System.out.println("\n" + fiboNumber + "-th number of Fibonacci sequence is = "
-                + fibonacciSequence.fibonacciSequenceMemoized(fiboNumber));
-        long timeAfter = System.currentTimeMillis();
-        System.out.println("Memoized Fibonacci function executed in "
-                + (timeAfter - timeBefore) + " ms");
+        System.out.println("\n" + fibonacciNumber + "-th number of Fibonacci sequence is = "
+                + fibonacciSequence.fibonacciSequenceMemoized(fibonacciNumber)
+                + "\n\ttook " + (System.currentTimeMillis() - timeBefore) + " ms with memoized function");
 
-        // Regular approach
         timeBefore = System.currentTimeMillis();
-        System.out.println("\n" + fiboNumber + "-th number of Fibonacci sequence is = "
-                + fibonacciSequence.fibonacciSequence(fiboNumber));
-        timeAfter = System.currentTimeMillis();
-        System.out.println("Regular Fibonacci function executed in " + (timeAfter - timeBefore) + " ms");
+        System.out.println("\n" + fibonacciNumber + "-th number of Fibonacci sequence is = "
+                + fibonacciSequence.fibonacciSequence(fibonacciNumber)
+                + "\n\ttook " + (System.currentTimeMillis() - timeBefore) + " ms with regular function");
 
 
         /*
@@ -73,19 +69,22 @@ public class Main {
         timeBefore = System.currentTimeMillis();
         System.out.println("\nGrid traveler can pass ("
                 + m + " by " + n + ") grid in "
-                + gridTraveler.gridTravel(m, n) + " different ways");
-        System.out.println("Grid travel time: " + (System.currentTimeMillis() - timeBefore)
-                + " ms\n\tfor: m = " + m + ", n = " + n);
+                + gridTraveler.gridTravel(m, n) + " different ways"
+                + "\n\ttravel time: " + (System.currentTimeMillis() - timeBefore)
+                + " ms for: m = " + m + ", n = " + n);
 //        System.out.println(gridTraveler.gridTravel(m,n)); //-> way too long, trust me
 
+
+        /*
+        * Binary search
+        */
         BinarySearch binarySearch = new BinarySearch();
         int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 17, 18};
         int searchedVal = 15;
         timeBefore = System.currentTimeMillis();
         System.out.println("\nBinary search of " + array.length + " elements array for value: " + searchedVal
-                + "\n\tindex: " + binarySearch.binarySearch(array, searchedVal));
-        timeAfter = System.currentTimeMillis();
-        System.out.println("Searching took " + (timeAfter - timeBefore) + " ms");
+                + "\n\tindex: " + binarySearch.binarySearch(array, searchedVal)
+                + "\n\ttook " + (System.currentTimeMillis() - timeBefore) + " ms");
 
 
         /*
@@ -98,19 +97,25 @@ public class Main {
         System.out.println("\nElements from array: " + Arrays.toString(csArray)
                 + "\n\t"
                 + (canSum.canSum(csNum, csArray) ? "do" : "do not")
-                + " sum to number: " + csNum);
-        timeAfter = System.currentTimeMillis();
-        System.out.println("Computations took " + (timeAfter - timeBefore) + " ms");
+                + " sum to number: " + csNum
+                + "\n\ttook " + (System.currentTimeMillis() - timeBefore) + " ms");
 
+
+        /*
+        * Sum elements in array
+        */
         Sum sum = new Sum();
         int[] sArray = {1,2,3,4,5};
         timeBefore = System.currentTimeMillis();
-        System.out.println("\nmain.java.Sum of elements in array: "
+        System.out.println("\nSum of elements in array: "
                 + Arrays.toString(sArray)
-                + " = " + sum.sumArray(sArray));
-        timeAfter = System.currentTimeMillis();
-        System.out.println("Execution time: " + (timeAfter - timeBefore) + " ms");
+                + " = " + sum.sumArray(sArray)
+                + "\n\ttook " + (System.currentTimeMillis() - timeBefore) + " ms");
 
+
+        /*
+        * Quicksort
+        */
         Sort sort = new Sort();
         int[] qsortArr = {5,8,2,3,10,0,2,-1,99,101,64,23,85,32,58,95,11,13,75,246};
         sort.quicksort(qsortArr, 0, (qsortArr.length - 1));
