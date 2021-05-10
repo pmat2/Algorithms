@@ -8,8 +8,8 @@ public class Fibonacci {
     /**
      * Regular Fibonacci sequence function
      * for n=50 execution takes around 50secs
-     * @param whichNumber n-th number of main.java.Fibonacci.main.java.Fibonacci sequence
-     * @return value of n-th number of main.java.Fibonacci.main.java.Fibonacci sequence
+     * @param whichNumber n-th number of Fibonacci sequence
+     * @return value of n-th number of Fibonacci sequence
      */
     public long fibonacciSequence(int whichNumber){
         if(whichNumber < 0) throw new IllegalArgumentException("Cannot calculate negative number of main.java.Fibonacci.main.java.Fibonacci sequence");
@@ -20,8 +20,8 @@ public class Fibonacci {
     /**
      * Memoized Fibonacci sequence function
      * After n=93 result is beyond long capabilities
-     * @param whichNumber n-th number of main.java.Fibonacci.main.java.Fibonacci sequence
-     * @return value of n-th number of main.java.Fibonacci.main.java.Fibonacci sequence
+     * @param whichNumber n-th number of Fibonacci sequence
+     * @return value of n-th number of Fibonacci sequence
      */
     public long fibonacciSequenceMemoized(int whichNumber){
         if(whichNumber < 0) throw new IllegalArgumentException("Cannot calculate negative number of main.java.Fibonacci.main.java.Fibonacci sequence");
