@@ -32,16 +32,23 @@ public class Sort {
             if(arr[j] <= pivot){
                 index++;
 
-                int temp = arr[index];
-                arr[index] = arr[j];
-                arr[j] = temp;
+                swap(arr, index, j);
             }
         }
-
-        int temp = arr[index + 1];
-        arr[index + 1] = arr[end];
-        arr[end] = temp;
+        swap(arr, index+1, end);
 
         return index + 1;
+    }
+
+    /**
+     * Swap function
+     * @param arr array of ints
+     * @param i index
+     * @param j index
+     */
+    private void swap(int[] arr, int i, int j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 }
